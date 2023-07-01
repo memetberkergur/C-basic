@@ -30,8 +30,8 @@ int main(int argc, char const *argv[])
     word = strtok(myString," ");
     while (word != NULL)
     {
-        //printf("\n%s",word);
-        word = strtok(NULL," ");
+        //printf("\n%s",kelime);
+        kelime = strtok(NULL," ");
         counter++;
     }
 
