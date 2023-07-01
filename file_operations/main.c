@@ -9,7 +9,7 @@ void cleanTerminal();
 int main(int argc, char const *argv[])
 {
     cleanTerminal();
-    char *kelime;
+    char *word;
     int counter=0;
 
     FILE *fptr;
@@ -27,11 +27,11 @@ int main(int argc, char const *argv[])
     // Print the file content
     printf("%s", myString);
 
-    kelime = strtok(myString," ");
-    while (kelime != NULL)
+    word = strtok(myString," ");
+    while (word != NULL)
     {
-        //printf("\n%s",kelime);
-        kelime = strtok(NULL," ");
+        //printf("\n%s",word);
+        word = strtok(NULL," ");
         counter++;
     }
 
